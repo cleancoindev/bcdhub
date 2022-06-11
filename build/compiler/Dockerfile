@@ -25,7 +25,7 @@ RUN go build -a -installsuffix cgo -o /go/bin/compiler .
 # ---------------------------------------------------------------------
 #  The second stage container, for running the application
 # ---------------------------------------------------------------------
-FROM node:12.18.3-buster
+FROM node:12-buster
 
 RUN apt-get update
 RUN apt-get install -y wget curl
